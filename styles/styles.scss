@@ -1,4 +1,8 @@
-h1{
-    font-size: 1.6rem;
-    color: aquamarine;
+@use 'option';
+@use 'hero';
+@use 'menu';
+
+body {
+  width: 100%;
+  height: 100%;
 }
