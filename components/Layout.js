@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 
 function Layout(props) {
-  const [isopen, setIsopen] = useState(true);
+  const [isopen, setIsopen] = useState(false);
 
   const toggle = () => {
     setIsopen(!isopen);
   };
   return (
     <>
-      <Menu isopen={isopen} />
+      <Menu isopen={isopen} toggle={toggle} />
       {props.children}
     </>
   );
