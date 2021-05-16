@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function HeadBg() {
   return (
@@ -20,7 +21,11 @@ function HeadBg() {
           <p>un service de qualité sans tromperie.</p>
         </div>
 
-        <button className="section-btn">Contactez</button>
+        <button className="section-btn">
+          <Link href="/contact">
+            <a>Contactez</a>
+          </Link>
+        </button>
       </div>
     </div>
   );

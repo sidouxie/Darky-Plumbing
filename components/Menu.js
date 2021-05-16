@@ -7,9 +7,13 @@ function Menu({ toggle, isopen }) {
     <>
       <header>
         <nav>
-          <div className="section-logo">
-            <img src="/zayn_logo.svg" alt="Logo zayn plombier" />
-          </div>
+          <Link href="/">
+            <a>
+              <div className="section-logo">
+                <img src="/zayn_logo.svg" alt="Logo zayn plombier" />
+              </div>
+            </a>
+          </Link>
 
           <div className="section-links">
             <Link href="/services">
@@ -42,19 +46,13 @@ function Menu({ toggle, isopen }) {
         <div className="sec-link">
           <div className="set-linked">
             <Link href="/services">
-              <a>
-                <span className="num-menu">1.</span>Services
-              </a>
+              <a>Services</a>
             </Link>
             <Link href="/about">
-              <a>
-                <span className="num-menu">2.</span>A propos
-              </a>
+              <a>A propos</a>
             </Link>
             <Link href="/contact">
-              <a>
-                <span className="num-menu">3.</span>Contact
-              </a>
+              <a>Contact</a>
             </Link>
           </div>
 

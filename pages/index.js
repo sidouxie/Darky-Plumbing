@@ -1,4 +1,5 @@
 import Head from "next/head";
+import BodyBg from "../components/BodyBg";
 import HeadBg from "../components/HeadBg";
 import Layout from "../components/Layout";
 
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
 
       <HeadBg />
+      <BodyBg />
     </Layout>
   );
 }
