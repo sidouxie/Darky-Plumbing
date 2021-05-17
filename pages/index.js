@@ -14,7 +14,7 @@ export default function Home() {
           name="description"
           content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
         />
-        <link rel="icon" href="/zayn_favicon_48.ico" />
+        <link rel="icon" href="/darky_favicon.ico" />
       </Head>
 
       <HeadBg />

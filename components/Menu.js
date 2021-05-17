@@ -10,7 +10,7 @@ function Menu({ toggle, isopen }) {
           <Link href="/">
             <a>
               <div className="section-logo">
-                <img src="/zayn_logo.svg" alt="Logo zayn plombier" />
+                <img src="/darky_logo.svg" alt="Logo darky plumbing" />
               </div>
             </a>
           </Link>
