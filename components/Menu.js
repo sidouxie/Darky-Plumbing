@@ -60,7 +60,7 @@ function Menu({ toggle, isopen }) {
             <span className="trait-separation"></span>
             <div className="ico-email">
               <IoMail size="20" color={"#eeeeee"} />
-              <p>zayn.plombier@gmail.com</p>
+              <p>darky.plumbing@gmail.com</p>
             </div>
             <div className="ico-numero">
               <IoCall size="20" color={"#eeeeee"} />

@@ -70,3 +70,19 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    padding: 2rem;
+  }
+
+  .section-desc {
+    font-size: 1.2rem;
+  }
+  .section-title h1 {
+    font-size: 2rem;
+  }
+  .section-slogan p {
+    font-size: 1.1rem;
+  }
+}

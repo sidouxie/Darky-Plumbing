@@ -4,6 +4,16 @@
   width: inherit;
   height: auto;
 
+  #thiky {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: #adadad;
+    margin: 2rem;
+    z-index: -1;
+  }
+
   .main-info {
     width: 100%;
     height: auto;
@@ -16,6 +26,7 @@
     padding: 1rem;
 
     .sec-title {
+      padding: 1rem;
       h3 {
         font-size: 1.4rem;
         font-weight: 700;
@@ -24,10 +35,178 @@
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.3;
         margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.sec-title h2 {
+  margin-left: 3rem;
+}
+
+.bg-section {
+  width: 100%;
+  background-color: $clr-primary-300;
+  height: auto;
+
+  .bg-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .section-1 {
+      width: 50%;
+      height: 270px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .sec-img {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .onglet {
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          transform: translateY(85%);
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: $clr-secondary-300;
+          overflow: hidden;
+
+          p {
+            display: inline-block;
+            position: relative;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: aliceblue;
+            margin: 10px;
+          }
+
+          .trait {
+            width: 80%;
+            height: 2px;
+            background-color: azure;
+            display: block;
+            position: relative;
+            transform: translateX(25px);
+          }
+        }
+      }
+
+      .sec-icone {
+        width: 50%;
+        height: 270px;
+        background-color: $clr-primary-400;
+
+        img {
+          object-fit: scale-down;
+        }
+      }
+    }
+
+    .section-2 {
+      width: 50%;
+      height: 270px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      .sec-img {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .onglet {
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          transform: translateY(85%);
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: $clr-secondary-300;
+          overflow: hidden;
+
+          p {
+            display: inline-block;
+            position: relative;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: aliceblue;
+            margin: 10px;
+          }
+
+          .trait {
+            width: 80%;
+            height: 2px;
+            background-color: azure;
+            display: block;
+            position: relative;
+            transform: translateX(25px);
+          }
+        }
+      }
+      .sec-icone {
+        width: 50%;
+        height: 270px;
+        background-color: $clr-primary-400;
+
+        img {
+          object-fit: scale-down;
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 868px) {
+  .main-info {
+    flex-direction: column !important;
+
+    .section-btn-sec {
+      margin: 0 !important;
+    }
+  }
+
+  .section-nos-services .sec-title h2 {
+    margin-left: 1rem !important;
+  }
+
+  .bg-grid {
+    flex-direction: column !important;
+
+    .section-1 {
+      width: 100% !important;
+
+      .sec-img .onglet .trait {
+        display: none !important;
+      }
+    }
+    .section-2 {
+      width: 100% !important;
+      flex-direction: row-reverse !important;
+
+      .sec-img .onglet .trait {
+        display: none !important;
       }
     }
   }
