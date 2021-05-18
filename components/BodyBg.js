@@ -48,10 +48,7 @@ function BodyBg() {
                   </div>
                 </div>
                 <div className="sec-icone">
-                  <img
-                    src="/images/icones/douche_icone.svg"
-                    alt="icone douche"
-                  />
+                  <IconDo fill="#393e46" width={"100%"} height={"100%"} />
                 </div>
               </div>
 
@@ -67,10 +64,7 @@ function BodyBg() {
                   </div>
                 </div>
                 <div className="sec-icone">
-                  <img
-                    src="/images/icones/casse_icone.svg"
-                    alt="icone tuyeau casser"
-                  />
+                  <IconTu fill="#393e46" width={"100%"} height={"100%"} />
                 </div>
               </div>
             </div>
@@ -80,45 +74,62 @@ function BodyBg() {
 
       <section className="sec-info-area">
         <div className="container">
-          <div className="sec-1">
-            <div className="sec-textuel">
-              <div className="sec-title">
-                <h2>
-                  <span className="thinner">Pose</span> sanitaires
-                </h2>
-                <p>textuel</p>
+          <div className="main-sec">
+            <div className="sec-1">
+              <div className="sec-textuel">
+                <div className="sec-title">
+                  <h2>
+                    <span className="thinner">Pose</span> sanitaires
+                  </h2>
+                  <p>
+                    Spécialisé dans la plomberie, je me charge de la pose de
+                    baignoire, douche à l'italienne, WC, vasque... Une question?
+                    <br /> Je vous <bold>conseille</bold> et vous{" "}
+                    <bold>accompagne</bold> dans vos projets.
+                  </p>
+                </div>
+              </div>
+              <div className="sec-icone">
+                <IconDo fill="#e7e7e7" width={140} height={140} />
               </div>
             </div>
-            <div className="sec-icone">
-              <IconDo fill="#9a9a9a" width={100} height={100} />
-            </div>
-          </div>
 
-          <div className="sec-2">
-            <div className="sec-textuel">
-              <div className="sec-title">
-                <h2>
-                  <span className="thinner">Solution</span> fuite
-                </h2>
-                <p>textuel</p>
+            <div className="sec-2">
+              <div className="sec-textuel">
+                <div className="sec-title">
+                  <h2>
+                    <span className="thinner">Solution</span> fuite
+                  </h2>
+                  <p>
+                    Une fuite d'eau ? Il est important d'intervenir{" "}
+                    <bold>rapidement</bold> et de manière <bold>efficace</bold>{" "}
+                    pour limiter les méfaits et atténuer le coût des{" "}
+                    <bold>réparations.</bold>
+                  </p>
+                </div>
+              </div>
+              <div className="sec-icone">
+                <IconTu fill="#e7e7e7" width={140} height={140} />
               </div>
             </div>
-            <div className="sec-icone">
-              <IconTu fill="#9a9a9a" width={100} height={100} />
-            </div>
-          </div>
 
-          <div className="sec-3">
-            <div className="sec-textuel">
-              <div className="sec-title">
-                <h2>
-                  <span className="thinner">Rénovation</span> plomberie
-                </h2>
-                <p>textuel</p>
+            <div className="sec-3">
+              <div className="sec-textuel">
+                <div className="sec-title">
+                  <h2>
+                    <span className="thinner">Rénovation</span> plomberie
+                  </h2>
+                  <p>
+                    Étude et installation de votre solution de rénovation pour
+                    un confort optimal, Si vous avez besoin d'un{" "}
+                    <bold>conseil</bold> de plomberie, n'hésitez pas à me{" "}
+                    <bold>contacter</bold>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="sec-icone">
-              <IconRa fill="#9a9a9a" width={100} height={100} />
+              <div className="sec-icone">
+                <IconRa fill="#e7e7e7" width={140} height={140} />
+              </div>
             </div>
           </div>
         </div>
