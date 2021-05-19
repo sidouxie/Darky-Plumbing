@@ -271,16 +271,17 @@
       }
 
       .sec-img {
-        width: 100%;
+        width: 50%;
         height: 100%;
 
         @media screen and (max-width: 868px) {
+          width: 100%;
           height: 250px;
         }
       }
 
       .sec-text {
-        width: 100%;
+        width: 50%;
         height: inherit;
         display: inline-flex;
         flex-direction: column;
@@ -291,6 +292,9 @@
         padding: 1rem;
         background-color: $clr-primary-400;
         color: $clr-light-400;
+        @media screen and (max-width: 868px) {
+          width: 100%;
+        }
 
         h3 {
           font-size: 1.6rem;
@@ -307,6 +311,60 @@
           line-height: 1.5;
           padding: 0 1rem;
         }
+      }
+    }
+  }
+}
+
+.section-devis {
+  margin-top: 3rem;
+
+  .titling {
+    margin: 2rem 0 2rem 1rem;
+
+    .sec-title h2 {
+      margin: 0;
+    }
+    .mini-title {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: $clr-primary-400;
+      margin-top: 1rem;
+    }
+  }
+
+  .cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    .card {
+      width: 25%;
+      height: 100%;
+      display: inline-flex;
+      flex-direction: column;
+      align-content: space-around;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .bg-title {
+        width: 100%;
+        height: 80px;
+        background-color: $clr-secondary-300;
+      }
+
+      .img-article {
+        width: 100%;
+        height: 100%;
+      }
+
+      .desc-article {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        line-height: 1.6;
       }
     }
   }

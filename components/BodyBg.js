@@ -3,6 +3,7 @@ import Link from "next/link";
 import IconTu from "./icon/IconTu";
 import IconRa from "./icon/IconRa";
 import IconDo from "./icon/IconDo";
+import Devis from "./Devis";
 
 function BodyBg() {
   return (
@@ -191,6 +192,8 @@ function BodyBg() {
               </div>
             </div>
           </div>
+
+          <Devis />
         </div>
       </section>
     </main>
