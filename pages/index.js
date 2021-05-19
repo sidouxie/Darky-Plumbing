@@ -8,7 +8,7 @@ export default function Home() {
     <Layout>
       <Head>
         <title>
-          Zayn Plombier - Plombier chauffagiste artisan Professionnel à alger
+          Darky Plumbing - Plombier chauffagiste artisan Professionnel à alger
         </title>
         <meta
           name="description"

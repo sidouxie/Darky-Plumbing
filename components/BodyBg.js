@@ -134,6 +134,65 @@ function BodyBg() {
           </div>
         </div>
       </section>
+
+      <section className="section-clientele">
+        <div className="container">
+          <div className="article-grid">
+            <div className="article">
+              <div className="sec-img">
+                <img src="/images/cuisines.jpg" alt="cuisine moderne" />
+              </div>
+              <div className="sec-text">
+                <h3>Clientèle & interventions</h3>
+                <p>
+                  Ma clientèle est assez vaste pouvant s'étendre du particulier
+                  au professionnel.
+                  <br />
+                  Architecte, Agence immobilière, Particulier autant de clients
+                  à satisfaire.
+                  <br />
+                  j'interviens également sur l'habitat neuf, la rénovation ainsi
+                  que les dépannages de plomberie.
+                </p>
+              </div>
+            </div>
+
+            <div className="article">
+              <div className="sec-img">
+                <img src="/images/baignoire.jpg" alt="salle de bain moderne" />
+              </div>
+              <div className="sec-text">
+                <h3>Lieux d'interventions</h3>
+                <p>
+                  Nous intervenons sur Alger et ses alentours comme :{" "}
+                  <bold>Bab-El-Oued</bold>, <bold>Bouzareah</bold>,{" "}
+                  <bold>Béni Messous</bold>,<bold>Ain Benian</bold>,
+                  <bold>Staoueli</bold>, <bold>Chéraga</bold>,{" "}
+                  <bold>Ouled Fayet</bold>, <bold>El Achour</bold>,{" "}
+                  <bold>Draria</bold>, <bold>Birkhadem</bold>,{" "}
+                  <bold>Saoula</bold>, <bold>Baba Hassen</bold>,{" "}
+                  <bold>Souidania</bold>...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-devis">
+        <div className="container">
+          <div className="titling">
+            <div className="sec-title">
+              <h2>
+                <span className="thinner">nos</span> Devis
+              </h2>
+              <div className="mini-title">
+                Un service de qualité à des tarifs clairs et définis par avance.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
