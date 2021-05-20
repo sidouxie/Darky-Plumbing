@@ -64,13 +64,20 @@ function Devis() {
           <div className="desc-article">
             <ul>
               {data.desc.map((dispo) => (
-                <li key={dispo}>{dispo}</li>
+                <li key={dispo}>
+                  <span>{dispo}</span>
+                </li>
               ))}
             </ul>
           </div>
           <div className="prix">
-            <span>À partir de </span>
-            <h5> {data.prix} DA TTC</h5>
+            <span>
+              <div className="mini">À partir de </div>
+            </span>
+            <h5>
+              {" "}
+              <div className="momo">{data.prix}</div> DA TTC
+            </h5>
           </div>
         </div>
       ))}
