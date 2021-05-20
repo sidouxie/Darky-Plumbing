@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
+import SeFooter from "./SeFooter";
 
 function Layout(props) {
   const [isopen, setIsopen] = useState(false);
@@ -28,6 +29,7 @@ function Layout(props) {
     <>
       <Menu isopen={isopen} toggle={toggle} />
       {props.children}
+      <SeFooter />
     </>
   );
 }
