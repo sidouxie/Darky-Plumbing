@@ -1,0 +1,112 @@
+@import "option";
+
+footer {
+  background-color: $clr-primary-300;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .social-media {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      color: $clr-light-500;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+
+      .politiques {
+        display: inline-flex;
+        width: 100%;
+        margin: 1.5rem 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:hover {
+          color: $clr-secondary-300;
+        }
+
+        a {
+          margin-left: 0.5rem;
+
+          &:hover {
+            border-bottom: 1px $clr-secondary-300 solid;
+            color: $clr-secondary-300;
+          }
+        }
+      }
+
+      .mail {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1rem;
+
+        &:hover {
+          color: $clr-secondary-300;
+        }
+
+        a {
+          margin-left: 0.5rem;
+
+          &:hover {
+            border-bottom: 1px $clr-secondary-300 solid;
+            color: $clr-secondary-300;
+          }
+        }
+      }
+
+      .phone {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1rem;
+
+        &:hover {
+          color: $clr-secondary-300;
+        }
+
+        a {
+          margin-left: 0.5rem;
+
+          &:hover {
+            border-bottom: 1px $clr-secondary-300 solid;
+            color: $clr-secondary-300;
+          }
+        }
+      }
+
+      .facebook {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1rem;
+
+        &:hover {
+          color: $clr-secondary-300;
+        }
+
+        a {
+          margin-left: 0.5rem;
+
+          &:hover {
+            border-bottom: 1px $clr-secondary-300 solid;
+            color: $clr-secondary-300;
+          }
+        }
+      }
+    }
+  }
+}

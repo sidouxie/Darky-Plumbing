@@ -291,7 +291,7 @@
         align-items: center;
         padding: 1rem;
         background-color: $clr-primary-400;
-        color: $clr-light-400;
+        color: $clr-light-500;
         @media screen and (max-width: 868px) {
           width: 100%;
         }
@@ -305,7 +305,7 @@
         }
 
         p {
-          color: $clr-light-300;
+          color: $clr-light-500;
           font-size: 1.1rem;
           font-weight: 400;
           line-height: 1.5;
@@ -318,6 +318,7 @@
 
 .section-devis {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 
   .titling {
     margin: 2rem 0 2rem 1rem;
@@ -355,7 +356,7 @@
 
     .card {
       width: 25%;
-      height: 100%;
+
       display: inline-flex;
       flex-direction: column;
       align-content: space-around;
@@ -394,7 +395,6 @@
 
       .desc-article {
         width: 100%;
-        height: 100%;
         font-size: 0.9rem;
         line-height: 1.6;
         text-transform: uppercase;
@@ -431,7 +431,6 @@
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
-        height: 50px;
         color: $clr-primary-300;
 
         span {
@@ -453,6 +452,7 @@
           height: auto;
           font-size: 1.2rem;
           font-weight: 400;
+          margin-top: 1rem;
 
           .momo {
             font-weight: 600;
