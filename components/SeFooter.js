@@ -85,7 +85,7 @@ export default function SeFooter() {
                 />
               </label>
 
-              <input type="submit" value="Envoyer" />
+              <input className="btn-form" type="submit" value="Envoyer" />
             </form>
           </div>
         </div>
