@@ -11,6 +11,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
+    @media (max-width: 864px) {
+      flex-direction: column-reverse;
+    }
 
     .social-media {
       display: inline-flex;
@@ -21,6 +24,10 @@ footer {
       font-size: 0.9rem;
       letter-spacing: 0.5px;
       font-weight: 400;
+      @media (max-width: 864px) {
+        align-items: center;
+        margin-top: 2rem;
+      }
 
       .politiques {
         display: inline-flex;
@@ -58,6 +65,7 @@ footer {
 
         a {
           margin-left: 0.5rem;
+          color: $clr-secondary-300;
 
           &:hover {
             border-bottom: 1px $clr-secondary-300 solid;
@@ -80,6 +88,7 @@ footer {
 
         a {
           margin-left: 0.5rem;
+          color: $clr-secondary-300;
 
           &:hover {
             border-bottom: 1px $clr-secondary-300 solid;
@@ -102,6 +111,7 @@ footer {
 
         a {
           margin-left: 0.5rem;
+          color: $clr-secondary-300;
 
           &:hover {
             border-bottom: 1px $clr-secondary-300 solid;

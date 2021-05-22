@@ -108,6 +108,7 @@ nav {
   align-items: center;
   right: -100%;
   transition: all 0.5s ease-in;
+  z-index: 1;
 
   &.active {
     right: 0;
