@@ -8,6 +8,35 @@ $clr-light-300: #adadad;
 $clr-light-400: #eeee;
 $clr-light-500: #d4e0e2;
 
+@mixin btn-style {
+  background: $clr-secondary-300;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.3rem 2rem;
+  cursor: pointer;
+  transition: all 150ms ease-out;
+
+  &:hover {
+    background: transparent;
+    border: 2px $clr-secondary-300 solid;
+    color: $clr-secondary-300;
+    box-shadow: 0px 0px 10px -4px $clr-secondary-300;
+    transition: all 150ms ease-out;
+  }
+
+  &:active {
+    color: $clr-secondary-300;
+    border: 2px $clr-secondary-300 solid;
+    box-shadow: 0px 0px 10px 0px $clr-secondary-300;
+    transition: all 150ms ease-out;
+  }
+}
+
 .bolder {
   font-weight: 700;
 }

@@ -10,7 +10,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 
     .social-media {
       display: inline-flex;
@@ -126,6 +126,7 @@ footer {
       .text-form {
         margin-top: 1rem;
         font-size: 0.9rem;
+        line-height: 1.325;
       }
 
       form {
@@ -138,13 +139,7 @@ footer {
         width: 100%;
 
         .btn-form {
-          background: transparent;
-          outline: none;
-          border: 1px #e6e6e6 solid;
-          font-size: 1.2rem;
-          padding: 0.3rem 1rem;
-          color: aliceblue;
-          cursor: pointer;
+          @include btn-style;
         }
 
         label {

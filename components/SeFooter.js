@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import DarkyLogo from "./icon/DarkyLogo";
 import { IoAlertCircleOutline } from "react-icons/io5";
@@ -6,7 +6,29 @@ import { IoMail } from "react-icons/io5";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export default function SeFooter() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
   return (
     <footer>
       <div className="container">
@@ -61,18 +83,34 @@ export default function SeFooter() {
               <span className="bolder">POUR LES ENQUÊTES GÉNÉRALES</span> -
               Veuillez utiliser le formulaire de contact ci-dessous.
             </div>
-            <form action="submit">
+            <form
+              action="submit"
+              name="contact"
+              data-netlify="true"
+              method="post"
+              netlify-honeypot="bot-field"
+              hidden
+              onSubmit={handleSubmit}
+            >
               <label>
                 Nom :
-                <input type="text" name="nom" placeholder="Prénom" />
+                <input
+                  type="text"
+                  name="nom"
+                  placeholder="Prénom"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </label>
 
               <label>
                 Email :
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="example@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </label>
 
@@ -82,8 +120,12 @@ export default function SeFooter() {
                   type="text"
                   name="message"
                   placeholder="envoie-nous un message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </label>
+
+              <input type="hidden" name="form-name" value="contact" />
 
               <input className="btn-form" type="submit" value="Envoyer" />
             </form>
