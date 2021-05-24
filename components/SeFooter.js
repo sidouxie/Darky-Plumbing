@@ -23,7 +23,7 @@ export default function SeFooter() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Votre message a bien été envoyé !"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -96,7 +96,7 @@ export default function SeFooter() {
                 Nom :
                 <input
                   type="text"
-                  name="name"
+                  name="Prenom"
                   placeholder="Prénom"
                   value={name}
                   onChange={(e) => setName(e.target.value)}

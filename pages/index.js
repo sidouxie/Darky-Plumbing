@@ -2,7 +2,6 @@ import Head from "next/head";
 import BodyBg from "../components/BodyBg";
 import HeadBg from "../components/HeadBg";
 import Layout from "../components/Layout";
-import Image from "next/image";
 
 export default function Home() {
   return (
