@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
 import SeFooter from "./SeFooter";
+import { animateScroll as scroll } from "react-scroll";
 
 function Layout(props) {
   const [isopen, setIsopen] = useState(false);
@@ -25,9 +26,17 @@ function Layout(props) {
   const toggle = () => {
     setIsopen(!isopen);
   };
+
+  const toggleContact = () => {
+    scroll.scrollToBottom({
+      smooth: true,
+      duration: 2000,
+    });
+    setIsopen(!isopen);
+  };
   return (
     <>
-      <Menu isopen={isopen} toggle={toggle} />
+      <Menu isopen={isopen} toggle={toggle} toggleContact={toggleContact} />
       {props.children}
       <SeFooter />
     </>

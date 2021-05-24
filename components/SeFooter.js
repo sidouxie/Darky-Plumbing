@@ -13,7 +13,7 @@ const encode = (data) => {
 };
 
 export default function SeFooter() {
-  const [name, setName] = useState("");
+  const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -21,9 +21,14 @@ export default function SeFooter() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+      body: encode({ "form-name": "contact", prenom, email, message }),
     })
-      .then(() => alert("Votre message a bien été envoyé !"))
+      .then(() => {
+        alert("Votre message a bien été envoyé !");
+        setPrenom("");
+        setEmail("");
+        setMessage("");
+      })
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -98,8 +103,9 @@ export default function SeFooter() {
                   type="text"
                   name="Prenom"
                   placeholder="Prénom"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={prenom}
+                  onChange={(e) => setPrenom(e.target.value)}
+                  required
                 />
               </label>
 
@@ -111,6 +117,7 @@ export default function SeFooter() {
                   placeholder="example@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </label>
 
@@ -122,12 +129,15 @@ export default function SeFooter() {
                   placeholder="envoie-nous un message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </label>
 
               <input type="hidden" name="form-name" value="contact" />
 
-              <input className="btn-form" type="submit" value="Envoyer" />
+              <button className="btn-form" type="submit" value="Envoyer">
+                Envoyer
+              </button>
             </form>
           </div>
         </div>

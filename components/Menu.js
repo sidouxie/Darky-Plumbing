@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { IoMenu, IoClose, IoMail, IoCall } from "react-icons/io5";
 
-function Menu({ toggle, isopen }) {
+function Menu({ toggle, isopen, toggleContact }) {
   return (
     <>
       <header>
@@ -22,9 +22,8 @@ function Menu({ toggle, isopen }) {
             <Link href="/about">
               <a>A propos</a>
             </Link>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
+
+            <a onClick={toggleContact}>Contact</a>
           </div>
 
           <div className="section-mobile" onClick={toggle}>
@@ -54,9 +53,7 @@ function Menu({ toggle, isopen }) {
             <Link href="/about">
               <a>A propos</a>
             </Link>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
+            <a onClick={toggleContact}>Contact</a>
           </div>
 
           <div className="sec-info">
