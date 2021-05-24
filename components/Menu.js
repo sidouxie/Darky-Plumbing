@@ -45,6 +45,9 @@ function Menu({ toggle, isopen }) {
 
         <div className="sec-link">
           <div className="set-linked">
+            <Link href="/">
+              <a>Accueil</a>
+            </Link>
             <Link href="/services">
               <a>Services</a>
             </Link>

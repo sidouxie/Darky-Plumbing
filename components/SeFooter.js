@@ -51,7 +51,7 @@ export default function SeFooter() {
                   rel="noopener noreferrer"
                   title="e-mail"
                 >
-                  darky-plumbing@gmail.com
+                  darky.plumbing@gmail.com
                 </a>
               </div>
               <div className="phone">
@@ -96,7 +96,7 @@ export default function SeFooter() {
                 Nom :
                 <input
                   type="text"
-                  name="nom"
+                  name="name"
                   placeholder="Prénom"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
