@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { IoMenu, IoClose, IoMail, IoCall } from "react-icons/io5";
 
-function Menu({ toggle, isopen, toggleContact }) {
+function Menu({ toggle, isopen, toggleContact, toggly }) {
   return (
     <>
       <header>
@@ -23,7 +23,7 @@ function Menu({ toggle, isopen, toggleContact }) {
               <a>A propos</a>
             </Link>
 
-            <a onClick={toggleContact}>Contact</a>
+            <a onClick={toggly}>Contact</a>
           </div>
 
           <div className="section-mobile" onClick={toggle}>

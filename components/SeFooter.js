@@ -101,7 +101,7 @@ export default function SeFooter() {
                 Nom :
                 <input
                   type="text"
-                  name="Prenom"
+                  name="prenom"
                   placeholder="Prénom"
                   value={prenom}
                   onChange={(e) => setPrenom(e.target.value)}

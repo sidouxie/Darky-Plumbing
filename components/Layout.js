@@ -27,6 +27,13 @@ function Layout(props) {
     setIsopen(!isopen);
   };
 
+  const toggly = () => {
+    scroll.scrollToBottom({
+      smooth: true,
+      duration: 2000,
+    });
+  };
+
   const toggleContact = () => {
     scroll.scrollToBottom({
       smooth: true,
@@ -36,7 +43,12 @@ function Layout(props) {
   };
   return (
     <>
-      <Menu isopen={isopen} toggle={toggle} toggleContact={toggleContact} />
+      <Menu
+        isopen={isopen}
+        toggle={toggle}
+        toggly={toggly}
+        toggleContact={toggleContact}
+      />
       {props.children}
       <SeFooter />
     </>
