@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { IoPhonePortrait } from "react-icons/io5";
 
 function about() {
   return (
@@ -22,7 +23,8 @@ function about() {
           </div>
         </div>
       </div>
-      <section>
+
+      <section className="section-about">
         <div className="section-text">
           <div className="container">
             <hr></hr>
@@ -166,6 +168,78 @@ function about() {
                     en ligne en cas d’urgence.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className="container">
+              <div className="section-heading">
+                <h3>Notre savoir faire</h3>
+              </div>
+              <div className="wraper">
+                <div className="section-text">
+                  <p>
+                    <span>
+                      La force d’un réseau comme le notre réside en sa capacité
+                      à trouver « le » professionnel qui prendra en charge et
+                      réalisera vos travaux conformément au devis signé et cela
+                      quelque soit l’endroit où devra avoir lieu la prestation
+                      en question.
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      Notre savoir-faire est donc de vous garantir tout le
+                      processus de réalisation :
+                    </span>
+                  </p>
+                  <ol>
+                    <li>
+                      <span>1. La définition de votre besoin</span>
+                    </li>
+                    <li>
+                      <span>2. L’établissement du devis</span>
+                    </li>
+                    <li>
+                      <span>
+                        3. La sélection du sous-traitant le plus qualifié dans
+                        son domaine
+                      </span>
+                    </li>
+                    <li>
+                      <span>4. La mise en relation</span>
+                    </li>
+                    <li>
+                      <span>
+                        5. La prise en compte de vos remarques et de votre
+                        satisfaction
+                      </span>
+                    </li>
+                    <li>
+                      <span>6. Le respect du coût annoncé, etc.</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-color">
+          <div className="container">
+            <div className="flexy">
+              <div className="section-title">
+                <h3>Si vous avez un projet à réaliser, contactez-nous</h3>
+              </div>
+
+              <div className="phone">
+                <IoPhonePortrait size="21" />
+                <a
+                  href="tel:+213551739299"
+                  rel="noopener noreferrer"
+                  title="numéro téléphone"
+                >
+                  +213 551 73 92 99
+                </a>
               </div>
             </div>
           </div>

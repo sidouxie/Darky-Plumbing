@@ -37,11 +37,6 @@ function Menu({ toggle, isopen, toggleContact, toggly }) {
       </header>
 
       <div className={`menu-mobile${isopen ? " active" : ""}`}>
-        <div className="sec-img">
-          <img src="/images/baignoire.jpg" alt="salle de bain moderne" />
-          <div className="cover-bg"></div>
-        </div>
-
         <div className="sec-link">
           <div className="set-linked">
             <Link href="/">
@@ -59,11 +54,11 @@ function Menu({ toggle, isopen, toggleContact, toggly }) {
           <div className="sec-info">
             <span className="trait-separation"></span>
             <div className="ico-email">
-              <IoMail size="20" color={"#eeeeee"} />
+              <IoMail size="16" color={"#eeeeee"} />
               <p>darky.plumbing@gmail.com</p>
             </div>
             <div className="ico-numero">
-              <IoCall size="20" color={"#eeeeee"} />
+              <IoCall size="16" color={"#eeeeee"} />
               <p>+213 551 73 92 99</p>
             </div>
           </div>

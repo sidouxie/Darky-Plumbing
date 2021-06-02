@@ -7,6 +7,14 @@ hr {
   margin: 40px 0 41px;
 }
 
+.section-about {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 .wraper-content {
   display: block;
 
@@ -18,17 +26,18 @@ hr {
     flex-direction: row;
     align-items: center;
 
-    @media (max-width: 664px) {
+    @media screen and (max-width: 890px) {
       flex-direction: column;
     }
 
     .section-heading {
-      text-align: left;
+      text-align: center;
       margin: 0 0 31px 100px;
       width: 50%;
-      @media (max-width: 664px) {
+      @media screen and (max-width: 890px) {
         width: 100%;
         margin: 0;
+        padding: 0 1rem;
       }
 
       p {
@@ -39,8 +48,9 @@ hr {
         margin-right: 2rem;
         margin-left: -5rem;
 
-        @media (max-width: 664px) {
+        @media screen and (max-width: 890px) {
           margin: 0;
+          text-align: left;
         }
       }
 
@@ -56,32 +66,32 @@ hr {
         margin: 0 0 19px;
 
         &::before {
-          width: 80px;
+          width: 50px;
           height: 2px;
           content: "";
           background: $clr-primary-300;
           position: absolute;
           top: 50%;
           left: 100%;
-          margin-left: 30px;
+          margin-left: 25px;
         }
 
         &::after {
-          width: 80px;
+          width: 50px;
           height: 2px;
           content: "";
           background: $clr-primary-300;
           position: absolute;
           top: 50%;
           right: 100%;
-          margin-right: 35px;
+          margin-right: 25px;
         }
       }
     }
 
     .img-wrap {
       width: 50%;
-      @media (max-width: 664px) {
+      @media screen and (max-width: 890px) {
         width: 100%;
         margin: 2rem 0;
       }
@@ -143,6 +153,7 @@ hr {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    justify-content: center;
 
     .col {
       margin: 0 28px;
@@ -151,7 +162,7 @@ hr {
       flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      @media (max-width: 664px) {
+      @media screen and (max-width: 890px) {
         margin: 0;
       }
 
@@ -159,7 +170,7 @@ hr {
         margin-bottom: 4rem;
         width: 50%;
         padding: 0 3rem;
-        @media (max-width: 664px) {
+        @media screen and (max-width: 890px) {
           width: 100%;
           padding: 0 1rem;
         }
@@ -189,6 +200,83 @@ hr {
             width: 84px;
             height: 84px;
           }
+        }
+      }
+    }
+  }
+
+  .section-text {
+    margin-left: 2rem;
+
+    @media screen and (max-width: 890px) {
+      margin: 0;
+    }
+    p,
+    ol {
+      color: $clr-primary-400;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    ol {
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+.section-color {
+  width: 100%;
+  height: 200px;
+  background: $clr-secondary-300;
+
+  .container {
+    height: 100%;
+    .flexy {
+      display: flex;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      .section-title {
+        font-size: 1.6rem;
+        font-weight: 800;
+        line-height: 1.3;
+        color: #fff;
+        padding: 0.5rem;
+      }
+
+      .phone {
+        color: $clr-secondary-300;
+        background: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px #fff solid;
+        padding: 0.6rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all ease-in 250ms;
+
+        &:hover {
+          background: transparent;
+          border: 2px #fff solid;
+          color: #fff;
+        }
+
+        a {
+          margin-left: 0.5rem;
         }
       }
     }
