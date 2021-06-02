@@ -11,13 +11,13 @@ $clr-light-500: #d4e0e2;
 @mixin btn-style {
   background: $clr-secondary-300;
   text-align: center;
-  letter-spacing: 1px;
-  font-weight: 100;
-  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
   color: #fff;
   border: none;
-  border-radius: 7px;
-  padding: 0.3rem 2rem;
+  border-radius: 4px;
+  padding: 0.5rem 2rem;
   cursor: pointer;
   transition: all 150ms ease-out;
 

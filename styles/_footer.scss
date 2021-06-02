@@ -129,12 +129,13 @@ footer {
       color: $clr-light-500;
 
       h3 {
-        font-size: 1.4rem;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 800;
+        color: #fff;
       }
 
       .text-form {
-        margin-top: 1rem;
+        margin: 2rem 0;
         font-size: 0.9rem;
         line-height: 1.325;
       }
@@ -163,7 +164,7 @@ footer {
           input,
           textarea {
             padding: 0.5rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 400;
             width: 100%;
             position: relative;

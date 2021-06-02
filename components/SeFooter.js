@@ -40,7 +40,7 @@ export default function SeFooter() {
         <div className="flex">
           <div className="social-media">
             <div className="sec-logo">
-              <DarkyLogo fill={"#fefefe"} width={140} height={100} />
+              <DarkyLogo fill={"#4d5561"} width={300} height={100} />
             </div>
             <div className="sec-reseau">
               <div className="politiques">

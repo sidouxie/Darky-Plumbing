@@ -16,8 +16,7 @@ function BodyBg() {
           </h3>
           <p>
             Faites appel à un plombier intègre intervenant à Alger pour vos
-            déppannages
-            <br /> et projets d'installation en plomberie.
+            déppannages et projets d'installation en plomberie.
           </p>
         </div>
         <button className="section-btn-sec">

@@ -28,11 +28,22 @@ export default function Home() {
           content="Darky Plumbing - Plombier chauffagiste Alger."
         />
         <meta property="og:url" content="https://darky-plumbing.netlify.app" />
-        <meta property="og:image" content="/static/images/background.jpg" />
+        <meta property="og:image" content="/images/screenshoot_bg.jpg" />
         <meta
           property="og:description"
           content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
         />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@darky-plumbing" />
+        <meta
+          name="twitter:title"
+          content="Darky Plumbing - Plombier chauffagiste Alger."
+        />
+        <meta
+          name="twitter:description"
+          content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
+        />
+        <meta name="twitter:image" content="/images/screenshoot_bg.jpg" />
       </Head>
 
       <HeadBg />

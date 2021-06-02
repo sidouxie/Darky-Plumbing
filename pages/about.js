@@ -1,10 +1,14 @@
 import React from "react";
+import Head from "next/head";
 import Layout from "../components/Layout";
 import { IoPhonePortrait } from "react-icons/io5";
 
 function about() {
   return (
     <Layout>
+      <Head>
+        <title>Darky Plumbing - Qui somme-nous ?</title>
+      </Head>
       <div className="main">
         <div className="bg-hero">
           <img src="/images/a_propos.jpg" alt="bg-a-propos" />

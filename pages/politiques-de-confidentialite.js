@@ -1,9 +1,13 @@
 import React from "react";
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 function politiques() {
   return (
     <Layout>
+      <Head>
+        <title>Darky Plumbing - POLITIQUE DE CONFIDENTIALITÉ</title>
+      </Head>
       <div className="section-head"></div>
       <div className="container">
         <div className="row">
