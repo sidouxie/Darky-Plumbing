@@ -151,6 +151,7 @@ footer {
 
         .btn-form {
           @include btn-style;
+          margin: 1rem 0;
         }
 
         label {
@@ -160,6 +161,10 @@ footer {
           align-items: flex-start;
           margin-top: 0.5rem;
           width: 100%;
+
+          textarea {
+            height: 100px;
+          }
 
           input,
           textarea {
@@ -201,6 +206,32 @@ footer {
               color: $clr-primary-400;
             }
           }
+        }
+      }
+    }
+  }
+
+  .section-copyright {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $clr-light-300;
+    text-align: center;
+
+    hr {
+      border-top: 1.5px #4d5561 solid;
+    }
+
+    p {
+      margin: 1rem 0;
+
+      a {
+        margin: 0 0.5rem;
+        font-weight: 600;
+        color: $clr-light-500;
+        transition: all ease-in 250ms;
+
+        &:hover {
+          color: $clr-secondary-300;
         }
       }
     }

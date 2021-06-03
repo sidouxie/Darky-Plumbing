@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { IoMenu, IoClose, IoMail, IoCall } from "react-icons/io5";
+import DarkyLogo from "./icon/DarkyLogo";
 
 function Menu({ toggle, isopen, toggleContact, toggly }) {
   return (
@@ -10,7 +11,7 @@ function Menu({ toggle, isopen, toggleContact, toggly }) {
           <Link href="/">
             <a>
               <div className="section-logo">
-                <img src="/darky_logo.svg" alt="Logo darky plumbing" />
+                <DarkyLogo height={"100%"} width={"130px"} fill={"#fff"} />
               </div>
             </a>
           </Link>

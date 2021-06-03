@@ -15,18 +15,20 @@ const encode = (data) => {
 export default function SeFooter() {
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
+  const [numero, setNumero] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", prenom, email, message }),
+      body: encode({ "form-name": "contact", prenom, numero, email, message }),
     })
       .then(() => {
         alert("Votre message a bien été envoyé !");
         setPrenom("");
         setEmail("");
+        setNumero("");
         setMessage("");
       })
       .catch((error) => alert(error));
@@ -40,7 +42,7 @@ export default function SeFooter() {
         <div className="flex">
           <div className="social-media">
             <div className="sec-logo">
-              <DarkyLogo fill={"#4d5561"} width={300} height={100} />
+              <DarkyLogo fill={"#4d5561"} width={200} height={100} />
             </div>
             <div className="sec-reseau">
               <div className="politiques">
@@ -98,11 +100,11 @@ export default function SeFooter() {
               onSubmit={handleSubmit}
             >
               <label>
-                Nom :
+                Nom* :
                 <input
                   type="text"
                   name="prenom"
-                  placeholder="Prénom"
+                  placeholder="Nom"
                   value={prenom}
                   onChange={(e) => setPrenom(e.target.value)}
                   required
@@ -110,7 +112,18 @@ export default function SeFooter() {
               </label>
 
               <label>
-                Email :
+                Numéro :
+                <input
+                  type="tel"
+                  name="numero"
+                  placeholder="+213 - 080 00 00 00"
+                  value={numero}
+                  onChange={(e) => setNumero(e.target.value)}
+                />
+              </label>
+
+              <label>
+                Email* :
                 <input
                   type="email"
                   name="email"
@@ -122,7 +135,7 @@ export default function SeFooter() {
               </label>
 
               <label>
-                Message :
+                Message* :
                 <textarea
                   type="text"
                   name="message"
@@ -140,6 +153,22 @@ export default function SeFooter() {
               </button>
             </form>
           </div>
+        </div>
+        <div className="section-copyright">
+          <hr></hr>
+          <p>Copyright © 2021 Darky-Plumbing</p>
+          <p>
+            Designed {"&"} coded by
+            <a
+              href="https://twitter.com/sidouxie"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="twitter profile"
+            >
+              Sidouxie.
+            </a>{" "}
+            All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
