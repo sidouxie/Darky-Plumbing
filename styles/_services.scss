@@ -29,11 +29,72 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
+
+    @media screen and (max-width: 834px) {
+      grid-template-columns: 1fr;
+    }
 
     .col {
       width: 100%;
       height: 300px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: fill;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+
+      .box-overlay {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        background: linear-gradient(0deg, #050505af);
+
+        z-index: 2;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        background: transparent;
+        position: relative;
+        display: inline-flex;
+        z-index: 3;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        transition: all ease-in 250ms;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
+}
+
+.section-grid :nth-child(1) {
+  background-image: url("/images/service/robinet.jpg");
+}
+
+.section-grid :nth-child(2) {
+  background-image: url("/images/service/radiateur.jpg");
+}
+
+.section-grid :nth-child(3) {
+  background-image: url("/images/service/piscine.jpg");
+}
+
+.section-grid :nth-child(4) {
+  background-image: url("/images/service/assainissement.jpg");
 }

@@ -2,15 +2,15 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 
-function chauffeDeau() {
+function piscine() {
   return (
     <Layout>
       <Head>
-        <title>Darky Plumbing - Services chauffe d'eau</title>
+        <title>Darky Plumbing - Services installation piscine</title>
       </Head>
-      <div>chauffe d'eau</div>;
+      <div>installation piscine</div>;
     </Layout>
   );
 }
 
-export default chauffeDeau;
+export default piscine;

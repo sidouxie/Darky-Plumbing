@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Link from "next/link";
+import { IoPhonePortrait } from "react-icons/io5";
 
 function services() {
   return (
@@ -71,32 +72,53 @@ function services() {
             </div>
 
             <div className="section-grid">
-              <div id="1" className="col">
-                <div className="box-overlay"></div>
-                <Link href="/services/plomberie">
-                  <a>Plomberie</a>
-                </Link>
+              <Link href="/services/plomberie-sanitaire">
+                <div id="1" className="col">
+                  <div className="box-overlay"></div>
+
+                  <a>Plomberie sanitaire</a>
+                </div>
+              </Link>
+
+              <Link href="/services/chauffage-centrale">
+                <div id="2" className="col">
+                  <div className="box-overlay"></div>
+                  <a>Chauffage centrale</a>
+                </div>
+              </Link>
+
+              <Link href="/services/installation-piscine">
+                <div id="3" className="col">
+                  <div className="box-overlay"></div>
+                  <a>installation piscine</a>
+                </div>
+              </Link>
+
+              <Link href="/services/assainissement">
+                <div id="4" className="col">
+                  <div className="box-overlay"></div>
+                  <a>Assainissement</a>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="section-color">
+          <div className="container">
+            <div className="flexy">
+              <div className="section-title">
+                <h3>Si vous avez un projet à réaliser, contactez-nous</h3>
               </div>
 
-              <div id="2" className="col">
-                <div className="box-overlay"></div>
-                <Link href="/services/chauffage">
-                  <a>Chauffage</a>
-                </Link>
-              </div>
-
-              <div id="3" className="col">
-                <div className="box-overlay"></div>
-                <Link href="/services/salle-de-bain">
-                  <a>Salle de bain</a>
-                </Link>
-              </div>
-
-              <div id="4" className="col">
-                <div className="box-overlay"></div>
-                <Link href="/services/chauffe-deau">
-                  <a>Ballon d'eau chaude</a>
-                </Link>
+              <div className="phone">
+                <IoPhonePortrait size="21" />
+                <a
+                  href="tel:+213551739299"
+                  rel="noopener noreferrer"
+                  title="numéro téléphone"
+                >
+                  +213 551 73 92 99
+                </a>
               </div>
             </div>
           </div>

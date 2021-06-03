@@ -2,15 +2,15 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 
-function chauffage() {
+function salleDebain() {
   return (
     <Layout>
       <Head>
-        <title>Darky Plumbing - Services chauffage</title>
+        <title>Darky Plumbing - Services Assainissement</title>
       </Head>
-      <div>Chauffage</div>;
+      <div>Assainissement</div>;
     </Layout>
   );
 }
 
-export default chauffage;
+export default salleDebain;
