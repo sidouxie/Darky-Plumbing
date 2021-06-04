@@ -6,6 +6,7 @@ import { animateScroll as scroll } from "react-scroll";
 function Layout(props) {
   const [isopen, setIsopen] = useState(false);
   const [matches, setMatches] = useState(false);
+  const [isClicked, setIsclicked] = useState(false);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 868px)");
@@ -27,6 +28,10 @@ function Layout(props) {
     setIsopen(!isopen);
   };
 
+  const toggleClicked = () => {
+    setIsclicked(!isClicked);
+  };
+
   const toggly = () => {
     scroll.scrollToBottom({
       smooth: true,
@@ -46,6 +51,8 @@ function Layout(props) {
       <Menu
         isopen={isopen}
         toggle={toggle}
+        isClicked={isClicked}
+        toggleClicked={toggleClicked}
         toggly={toggly}
         toggleContact={toggleContact}
       />

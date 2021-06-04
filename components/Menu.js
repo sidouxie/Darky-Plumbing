@@ -1,9 +1,23 @@
 import React from "react";
 import Link from "next/link";
-import { IoMenu, IoClose, IoMail, IoCall } from "react-icons/io5";
+import {
+  IoMenu,
+  IoClose,
+  IoMail,
+  IoCall,
+  IoChevronDown,
+  IoChevronUp,
+} from "react-icons/io5";
 import DarkyLogo from "./icon/DarkyLogo";
 
-function Menu({ toggle, isopen, toggleContact, toggly }) {
+function Menu({
+  toggle,
+  isopen,
+  toggleContact,
+  toggly,
+  isClicked,
+  toggleClicked,
+}) {
   return (
     <>
       <header>
@@ -43,9 +57,35 @@ function Menu({ toggle, isopen, toggleContact, toggly }) {
             <Link href="/">
               <a>Accueil</a>
             </Link>
-            <Link href="/services">
-              <a>Services</a>
-            </Link>
+            <div className="linked-services">
+              <div className="flex-service">
+                <Link href="/services">
+                  <a>Services</a>
+                </Link>
+
+                <div className="btn-activable" onClick={toggleClicked}>
+                  {!isClicked ? (
+                    <IoChevronDown size="25" color="#fff" />
+                  ) : (
+                    <IoChevronUp size="25" color="#fff" />
+                  )}
+                </div>
+              </div>
+              <div className={`links ${isClicked ? "active" : ""}`}>
+                <Link href="/services/plomberie-sanitaire">
+                  <a>plomberie-sanitaire</a>
+                </Link>
+                <Link href="/services/chauffage-centrale">
+                  <a>chauffage-centrale</a>
+                </Link>
+                <Link href="/services/installation-piscine">
+                  <a>installation-piscine</a>
+                </Link>
+                <Link href="/services/assainissement">
+                  <a>assainissement</a>
+                </Link>
+              </div>
+            </div>
             <Link href="/about">
               <a>A propos</a>
             </Link>
