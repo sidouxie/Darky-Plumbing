@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
+import { IoPhonePortrait } from "react-icons/io5";
 
 function plomberie() {
   return (
@@ -110,6 +111,30 @@ function plomberie() {
 
               <div className="img-wrap">
                 <img src="/images/baignoire.jpg" alt="nos concept image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-color">
+          <div className="container">
+            <div className="flexy">
+              <div className="section-title">
+                <h3>
+                  Des services de proximité adaptés à vos besoins en plomberie
+                  sanitaire
+                </h3>
+              </div>
+
+              <div className="phone">
+                <IoPhonePortrait size="21" />
+                <a
+                  href="tel:+213551739299"
+                  rel="noopener noreferrer"
+                  title="numéro téléphone"
+                >
+                  +213 551 73 92 99
+                </a>
               </div>
             </div>
           </div>

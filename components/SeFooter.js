@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import DarkyLogo from "./icon/DarkyLogo";
+import DarkylogoFooter from "./icon/DarkylogoFooter";
 import { IoAlertCircleOutline } from "react-icons/io5";
 import { IoMail } from "react-icons/io5";
 import { IoPhonePortraitOutline } from "react-icons/io5";
@@ -42,7 +42,7 @@ export default function SeFooter() {
         <div className="flex">
           <div className="social-media">
             <div className="sec-logo">
-              <DarkyLogo fill={"#4d5561"} width={200} height={100} />
+              <DarkylogoFooter fill={"#4d5561"} width={200} height={200} />
             </div>
             <div className="sec-reseau">
               <div className="politiques">
@@ -84,7 +84,7 @@ export default function SeFooter() {
               </div>
             </div>
           </div>
-          <div className="contact">
+          <div className="contact" id="contacty">
             <h3>Envoie-nous un message</h3>
             <div className="text-form">
               <span className="bolder">POUR LES ENQUÊTES GÉNÉRALES</span> -

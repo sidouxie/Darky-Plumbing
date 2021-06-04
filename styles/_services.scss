@@ -21,6 +21,13 @@
         span {
           margin-bottom: 1.6rem;
 
+          li {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+            font-weight: 600;
+            list-style: disc;
+          }
+
           strong {
             font-weight: 700;
             color: $clr-primary-300;

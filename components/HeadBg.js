@@ -1,13 +1,15 @@
 import React from "react";
+import Link from "next/link";
 import { animateScroll as scroll } from "react-scroll";
 
 function HeadBg() {
-  const toggleContact = () => {
+  const scrollToggle = () => {
     scroll.scrollToBottom({
       smooth: true,
       duration: 2000,
     });
   };
+
   return (
     <div className="main">
       <div className="bg-hero">
@@ -27,7 +29,7 @@ function HeadBg() {
           <p>un service de qualité sans tromperie.</p>
         </div>
 
-        <button onClick={toggleContact} className="section-btn">
+        <button onClick={scrollToggle} className="section-btn">
           Contactez
         </button>
       </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import BodyBg from "../components/BodyBg";
 import HeadBg from "../components/HeadBg";
