@@ -1,5 +1,25 @@
 @import "option";
 
+@keyframes linksAnim {
+  from {
+    transform: translate3d(100px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes linksOpa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -108,7 +128,7 @@ nav {
   align-items: center;
   right: -100%;
   transition: all 0.5s ease-in;
-  z-index: 1;
+  z-index: 5;
 
   &.active {
     right: 0;
@@ -165,6 +185,7 @@ nav {
         font-size: 1rem;
         display: none;
         transition: all ease-out 500ms;
+        display: none;
 
         &.active {
           display: flex;
@@ -173,6 +194,23 @@ nav {
           flex-direction: column;
           align-items: flex-start;
           transition: all ease-in 500ms;
+          animation-name: linksOpa;
+          animation-duration: 1.5s;
+
+          :nth-child(1) {
+            animation-name: linksAnim;
+            animation-duration: 1s;
+          }
+          :nth-child(2) {
+            animation-name: linksAnim;
+            animation-duration: 1s;
+            animation-delay: 200ms;
+          }
+          :nth-child(3) {
+            animation-name: linksAnim;
+            animation-duration: 1s;
+            animation-delay: 300ms;
+          }
         }
 
         a {
