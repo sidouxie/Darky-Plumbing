@@ -15,14 +15,14 @@ function politiques() {
             <h1>POLITIQUE DE CONFIDENTIALITÉ.</h1>
             <div className="section-textil-info" style={{ color: "#b3b5bf" }}>
               <span>
-                Cette politique s'applique au site : darky-plumbing.com
+                Cette politique s'applique au site : darky-plumbing.ml
               </span>
               <span>Date de dernière mise à jour : 24 mai 2021</span>
             </div>
             <div className="textil">
               <p>
                 Le respect de votre vie privée est de la plus haute importance
-                pour darky-plumbing.com, qui est responsable de ce site.
+                pour darky-plumbing.ml, qui est responsable de ce site.
               </p>
               <p>
                 La présente politique de confidentialité a pour but de vous
@@ -43,8 +43,11 @@ function politiques() {
                 générales d'utilisation que vous pouvez consulter à l'adresse
                 ci-après :
               </p>
-              <a target="_blank" href="https://darky-plumbing.com/CGU">
-                https://darky-plumbing.com/CGU
+              <a
+                target="_blank"
+                href="https://darky-plumbing.ml/politiques-de-confidentialite"
+              >
+                https://darky-plumbing.ml/politiques-de-confidentialite
               </a>
             </div>
             <h3>1. COLLECTE DE RENSEIGNEMENTS PERSONNELS</h3>
@@ -167,11 +170,11 @@ function politiques() {
               </strong>
               <p>
                 Le responsable du traitement des renseignements personnels est :
-                darky-plumbing.com. Il peut être contacté de la manière suivante
+                darky-plumbing.ml. Il peut être contacté de la manière suivante
                 :
               </p>
-              <a target="_blank" href="https://darky-plumbing.com">
-                darky-plumbing.com
+              <a target="_blank" href="https://darky-plumbing.ml">
+                darky-plumbing.ml
               </a>
               <p>
                 Le responsable du traitement des renseignements personnels est
@@ -209,8 +212,8 @@ function politiques() {
                 demander le retrait de vos renseignements personnels, vous devez
                 suivre la procédure suivante :
               </p>
-              <a target="_blank" href="https://darky-plumbing.com">
-                darky-plumbing.com
+              <a target="_blank" href="https://darky-plumbing.ml">
+                darky-plumbing.ml
               </a>
             </div>
             <h3>9. DROIT D'ACCÈS, DE RECTIFICATION ET DE SUPPRESSION</h3>
@@ -220,8 +223,8 @@ function politiques() {
                 demander la suppression des renseignements vous concernant, en
                 respectant la procédure ci-après énoncée :
               </p>
-              <a target="_blank" href="https://darky-plumbing.com">
-                darky-plumbing.com
+              <a target="_blank" href="https://darky-plumbing.ml">
+                darky-plumbing.ml
               </a>
             </div>
             <h3>10. SÉCURITÉ</h3>
@@ -279,9 +282,9 @@ function politiques() {
               </p>
               <a
                 target="_blank"
-                href="https://darky-plumbing.com/Politique-de-confidentialite"
+                href="https://darky-plumbing.ml/Politique-de-confidentialite"
               >
-                https://darky-plumbing.com/politique-de-confidentialite
+                https://darky-plumbing.ml/politique-de-confidentialite
               </a>
               <p>
                 Nous nous réservons le droit de la modifier afin de garantir sa
