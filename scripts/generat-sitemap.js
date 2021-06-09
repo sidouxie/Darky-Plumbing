@@ -3,8 +3,8 @@ const path = require("path");
 
 sitemap({
   baseUrl: "https://darky-plumbing.ml",
-  pagesDirectory: path.resolve(__dirname, "../out/"),
-  targetDirectory: path.resolve(__dirname, "../out/"),
+  pagesDirectory: path.resolve(__dirname, "../out/static/"),
+  targetDirectory: path.resolve(__dirname, "../out/static/"),
   ignoredExtensions: [
     "png",
     "map",
