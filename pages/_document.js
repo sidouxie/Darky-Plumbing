@@ -12,6 +12,37 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/darky_favicon.ico" />
 
+          <meta
+            name="description"
+            content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
+          />
+          <link rel="icon" href="/darky_favicon.ico" />
+          <meta
+            name="keywords"
+            content="plombier, chauffagiste, alger, chauffage central, artisan, spécialisée, pose sanitaire, installation, rénovation,darky-plumbing,entretien"
+          />
+          <meta
+            property="og:title"
+            content="Darky Plumbing - Plombier chauffagiste Alger."
+          />
+          <meta property="og:url" content="https://darky-plumbing.ml" />
+          <meta property="og:image" content="/images/screenshoot_bg.jpg" />
+          <meta
+            property="og:description"
+            content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
+          />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@darky-plumbing" />
+          <meta
+            name="twitter:title"
+            content="Darky Plumbing - Plombier chauffagiste Alger."
+          />
+          <meta
+            name="twitter:description"
+            content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
+          />
+          <meta name="twitter:image" content="/images/screenshoot_bg.jpg" />
+
           {/* <!-- Google Analytics --> */}
           <script
             dangerouslySetInnerHTML={{

@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export && npm run generate:sitemap",
+    "export": "next export && npm run postexport",
     "start": "next start",
-    "generate:sitemap": "node ./scripts/generat-sitemap.js"
+    "postexport": "node post-export.js"
   },
   "dependencies": {
     "next": "^10.2.3",

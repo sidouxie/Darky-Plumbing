@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build && npm run generate:sitemap"
+  command = "npm run build && npm run postexport"
   publish = "out"
 
 [[plugins]]
