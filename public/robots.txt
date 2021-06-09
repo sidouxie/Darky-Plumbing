@@ -1,0 +1,7 @@
+Sitemap: https://darky-plumbing.ml/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /static/
+Disallow: /static/*
