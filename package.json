@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export && npm run postexport",
-    "start": "next start",
-    "postexport": "node post-export.js"
+    "export": "next export",
+    "start": "next start"
   },
   "dependencies": {
     "next": "^10.2.3",
