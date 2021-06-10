@@ -12,7 +12,7 @@ function Devis() {
         "fuite wc & salle de bain",
         "fuite radiateur & chauffe-eau",
       ],
-      prix: "4500",
+      prix: "1500",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ function Devis() {
         "débouchage wc",
         "réparation de chasse d'eau",
       ],
-      prix: "9000",
+      prix: "1500",
     },
     {
       id: 3,
@@ -32,11 +32,11 @@ function Devis() {
       img: "/images/articles/3.jpg",
       desc: [
         "installation robinetterie",
-        "installation tuyauterie",
+        "installation chauffe-eau",
         "installation lavabo",
-        "autre installation",
+        "installation évier",
       ],
-      prix: "16500",
+      prix: "2500",
     },
     {
       id: 4,
@@ -46,9 +46,9 @@ function Devis() {
         "installation de chauffage",
         "installation de wc",
         "installation de salle de bain",
-        "installation & chauffe-eau",
+        "installation douche ou baignoire",
       ],
-      prix: "34500",
+      prix: "3000",
     },
   ];
   return (
@@ -76,7 +76,8 @@ function Devis() {
             </span>
             <h5>
               {" "}
-              <div className="momo">{data.prix}</div> DA TTC
+              <div className="momo">{data.prix}</div>
+              <strong>DA TTC</strong>
             </h5>
           </div>
         </div>
