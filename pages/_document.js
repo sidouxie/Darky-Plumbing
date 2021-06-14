@@ -11,12 +11,13 @@ class MyDocument extends Document {
       <Html lang="fr">
         <Head>
           <link rel="icon" href="/darky_favicon.ico" />
+          <link rel="shortcut icon" href="/darky_favicon.ico" />
+          <link rel="apple-touch-icon" href="/darky_favicon.ico" />
 
           <meta
             name="description"
             content="Plombier chauffagiste Alger. Artisan agréée et spécialisée dans la plomberie, le chauffage et l'assainissement. Riche d'une expérience et de savoir-faire à votre service."
           />
-          <link rel="icon" href="/darky_favicon.ico" />
           <meta
             name="keywords"
             content="plombier, chauffagiste, alger, chauffage central, artisan, spécialisée, pose sanitaire, installation, rénovation,darky-plumbing,entretien"
