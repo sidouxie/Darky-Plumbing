@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="fr">
         <Head>
-          <link rel="icon" href="/favicons/favicon.ico" />
+          <link rel="icon" sizes="64x64" href="/favicons/favicon.ico" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -28,12 +28,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicons/favicon-16x16.png"
           />
-          <link
-            rel="shortcut icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicons/favicon-16x16.png"
-          />
+          <link rel="shortcut icon" href="/favicons/favicon.ico" />
           <link rel="manifest" href="/favicons/site.webmanifest" />
           <link
             rel="mask-icon"
