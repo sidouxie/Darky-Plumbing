@@ -10,6 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="fr">
         <Head>
+          <link rel="icon" href="/favicons/favicon.ico" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
