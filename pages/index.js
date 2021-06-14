@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <Head>
         <title>
-          Darky Plumbing - Plombier chauffagiste artisan Professionnel à alger
+          Darky Plumbing - Plombier chauffagiste Professionnel à alger
         </title>
         <meta
           name="viewport"
@@ -28,7 +28,7 @@ export default function Home() {
           property="og:title"
           content="Darky Plumbing - Plombier chauffagiste Alger."
         />
-        <meta property="og:url" content="https://darky-plumbing.netlify.app" />
+        <meta property="og:url" content="https://darky-plumbing.ml" />
         <meta property="og:image" content="/images/screenshoot_bg.jpg" />
         <meta
           property="og:description"
