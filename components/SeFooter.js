@@ -160,10 +160,10 @@ export default function SeFooter() {
           <p>
             Designed {"&"} coded by
             <a
-              href="https://twitter.com/sidouxie"
+              href="https://sidouxie.com"
               rel="noopener noreferrer"
               target="_blank"
-              title="twitter profile"
+              title="sidouxie site web"
             >
               Sidouxie.
             </a>{" "}
